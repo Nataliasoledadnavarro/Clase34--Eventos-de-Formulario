@@ -1,7 +1,4 @@
-
-
-
-//primera parte 
+//primera parte
 
 // const inputNombre = document.getElementById("input-nombre")
 // const inputContrasenia = document.getElementById("contrasenia")
@@ -32,14 +29,11 @@
 // // change
 // inputNombre.onchange = escucharCambios
 
-
 // const escucharCadaTipeo = (event) => {
 //   console.log(event.target.value)
 // }
 
 // inputNombre.oninput = escucharCadaTipeo
-
-
 
 // const confirmarSiContraseniasSonIguales = () => {
 
@@ -47,7 +41,7 @@
 //   const contrasenia2 = inputContraseniaConfirmacion.value
 
 //   if (contrasenia1 !== contrasenia2) {
-    
+
 //     inputContrasenia.style.borderColor = "#FF0000"
 //     inputContraseniaConfirmacion.style.borderColor = "#FF0000"
 
@@ -68,15 +62,11 @@
 
 // inputContraseniaConfirmacion.onblur = confirmarSiContraseniasSonIguales
 
-
-
 // todos mis elementos de formulario van a tener 4 eventos asociados
 // onfocus --> el usuario hace foco
 // onblur --> el usuario saca el foco
 // onchange --> el usuario envia un valor
-// oninput --> el usuario escribe algo 
-
-
+// oninput --> el usuario escribe algo
 
 // segunda parte
 
@@ -101,21 +91,18 @@
 
 //   console.log(inputPerro.value)
 //   console.log(inputPerro.checked)
-  
+
 //   console.log(inputConejo.value)
 //   console.log(inputConejo.checked)
-  
-  
+
 //   console.log(inputSuenios.value)
 //   console.log(inputColor.value)
 //   console.log(inputAmorConejos.value)
-// } 
+// }
 
+// tercera parte
 
-// tercera parte 
-
-
-const textoInput = document.getElementById("texto")
+/*const textoInput = document.getElementById("texto")
 const textoResultado = document.getElementById("resultado-texto")
 const colorInput = document.getElementById("color")
 const imagenInput = document.getElementById("imagen")
@@ -134,8 +121,49 @@ imagenInput.oninput = () => {
   // imagenInput.value
   resultadoImagen.src = imagenInput.value 
 
+}*/
+
+////ejericicio 1 //// REVISAR
+/*const kilometrosInput = document.getElementById("kilometros")
+
+const millasInput = document.getElementById("millas")
+
+kilometrosInput.onchange = () => {
+  const kmAMillas = kilometrosInput.value * 0.62
+  millasInput.value = kmAMillas
 }
 
+millasInput.onchange = () => {
+  const millasAKm = millasInput.value * 1.61
+  kilometrosInput.value = millasAKm
+}*/
 
+////ejercicio 4//// REVISAR
 
+/*const urlInput = document.getElementById("url");
+const botonEnviar = document.querySelector(".agregar-img");
+const img = document.querySelector(".img");
 
+botonEnviar.onclick = () => {
+
+  img.src = urlInput.value;
+};
+
+img.onclick = () => {
+  img.src = " "
+}*/
+
+///ejercicio 2 ///
+const redInput = document.getElementById("red")
+const greenInput = document.getElementById("green")
+const blueInput = document.getElementById("blue")
+const body = document.querySelector("body")
+
+const colorBody = () => { 
+const red = redInput.value
+const green = redInput.value
+const blue = redInput.value
+  body.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")"
+}
+
+colorBody()
